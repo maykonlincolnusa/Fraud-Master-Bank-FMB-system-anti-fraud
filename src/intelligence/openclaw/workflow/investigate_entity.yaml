@@ -1,0 +1,9 @@
+name: investigate_entity
+version: 0.1
+steps:
+  - id: fetch_entity
+    action: load_entity
+  - id: fetch_alerts
+    action: load_alerts
+  - id: summarize
+    action: summarize_case

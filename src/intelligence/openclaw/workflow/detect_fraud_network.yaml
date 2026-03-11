@@ -1,0 +1,11 @@
+name: detect_fraud_network
+version: 0.1
+steps:
+  - id: ingest_transactions
+    action: ingest
+  - id: build_graph
+    action: graph_snapshot
+  - id: score_risk
+    action: score
+  - id: emit_alerts
+    action: notify

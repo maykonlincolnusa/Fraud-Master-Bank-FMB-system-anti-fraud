@@ -1,0 +1,1 @@
+"""Fraud Master Bank package."""

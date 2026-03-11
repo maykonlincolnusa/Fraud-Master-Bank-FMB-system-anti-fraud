@@ -1,0 +1,13 @@
+[project]
+name = "fraud-master-bank"
+version = "0.1.0"
+description = "Anti-fraud demo with ingestion, scoring, and alerts"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 100

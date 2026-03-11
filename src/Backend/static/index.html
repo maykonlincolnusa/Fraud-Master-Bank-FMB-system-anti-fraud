@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Fraud Master Bank</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <main class="shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Fraud Master Bank</p>
+          <h1>Real-time fraud radar with explainable signals.</h1>
+          <p class="sub">
+            Ingest transactions, score risk, and track alerts instantly.
+          </p>
+        </div>
+        <div class="status-card">
+          <p class="status-title">System</p>
+          <div class="status-row">
+            <span>API</span>
+            <span id="apiStatus" class="pill">checking</span>
+          </div>
+          <div class="status-row">
+            <span>Alerts WS</span>
+            <span id="wsStatus" class="pill">disconnected</span>
+          </div>
+          <div class="status-row">
+            <span>Entities</span>
+            <span id="entityCount" class="metric">0</span>
+          </div>
+          <div class="status-row">
+            <span>Graph</span>
+            <span id="graphCount" class="metric">0 / 0</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="grid">
+        <div class="card">
+          <h2>Ingest transaction</h2>
+          <form id="ingestForm">
+            <label>
+              Entity ID
+              <input name="entity_id" required />
+            </label>
+            <label>
+              Counterparty ID
+              <input name="counterparty_id" />
+            </label>
+            <div class="row">
+              <label>
+                Amount
+                <input name="amount" type="number" step="0.01" required />
+              </label>
+              <label>
+                Currency
+                <input name="currency" maxlength="3" value="USD" />
+              </label>
+            </div>
+            <div class="row">
+              <label>
+                Channel
+                <input name="channel" placeholder="card / atm / crypto" />
+              </label>
+              <label>
+                Country
+                <input name="country" placeholder="US" maxlength="2" />
+              </label>
+            </div>
+            <button type="submit">Send transaction</button>
+          </form>
+          <p id="ingestResult" class="hint"></p>
+        </div>
+
+        <div class="card">
+          <h2>Latest alerts</h2>
+          <ul id="alertsList" class="list"></ul>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div class="card">
+          <h2>Entities</h2>
+          <ul id="entitiesList" class="list"></ul>
+        </div>
+        <div class="card">
+          <h2>Graph snapshot</h2>
+          <div id="graphSummary" class="graph-summary">
+            <div>
+              <p class="label">Nodes</p>
+              <p id="graphNodes" class="value">0</p>
+            </div>
+            <div>
+              <p class="label">Edges</p>
+              <p id="graphEdges" class="value">0</p>
+            </div>
+            <div>
+              <p class="label">Top Link</p>
+              <p id="graphTop" class="value">-</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+name: news_risk_analysis
+version: 0.1
+steps:
+  - id: ingest_news
+    action: ingest_news
+  - id: analyze_sentiment
+    action: sentiment
+  - id: detect_signals
+    action: detect_signals
