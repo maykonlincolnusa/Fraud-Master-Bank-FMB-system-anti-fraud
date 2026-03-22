@@ -1,194 +1,221 @@
 <div align="center">
 
-<!-- BANNER — renderiza no GitHub desktop e mobile como imagem -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B0000,60:DC143C,100:1a0000&height=200&section=header&text=FRAUD%20MASTER%20BANK&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=42&desc=Intelig%C3%AAncia%20Antifraude%20%E2%80%B7%20Tempo%20Real%20%E2%80%B7%20Produ%C3%A7%C3%A3o&descAlignY=64&descSize=17&descColor=ffcccc" width="100%" alt="Fraud Master Bank"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0000,40:8B0000,80:DC143C,100:ff4444&height=220&section=header&text=FRAUD%20MASTER%20BANK&fontSize=62&fontColor=ffffff&animation=fadeIn&fontAlignY=44&desc=Real-Time%20Fraud%20Intelligence%20%E2%80%B7%20Explainable%20Risk%20Scoring%20%E2%80%B7%20Production-Ready&descAlignY=66&descSize=16&descColor=ffcccc" width="100%" alt="Fraud Master Bank"/>
 
-<!-- TYPING ANIMATION -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=16&duration=2800&pause=900&color=DC143C&center=true&vCenter=true&width=480&lines=Detec%C3%A7%C3%A3o+de+Fraudes+em+Tempo+Real+%F0%9F%94%B4;Pipeline+Operacional+End-to-End;Scoring+de+Risco+Explic%C3%A1vel+%E2%9A%A1;WebSocket+%C2%B7+FastAPI+%C2%B7+PostgreSQL" alt="Typing"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=15&duration=2600&pause=800&color=FF3B3B&center=true&vCenter=true&multiline=false&width=520&lines=Real-Time+Transaction+Fraud+Detection+%F0%9F%94%B4;End-to-End+Operational+Pipeline+%E2%9C%85;Explainable+Risk+Scoring+Engine+%E2%9A%A1;WebSocket+Live+Alerts+%C2%B7+FastAPI+%C2%B7+PostgreSQL;Zero+Black+Boxes.+Zero+Simulated+Data." alt="Typing SVG"/>
 
 <br/><br/>
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.111+-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![SQLite](https://img.shields.io/badge/SQLite-Padrão-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://sqlite.org)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Opcional-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://postgresql.org)
-[![WebSocket](https://img.shields.io/badge/WebSocket-Alertas%20ao%20Vivo-E34F26?style=for-the-badge&logoColor=white)](https://developer.mozilla.org/docs/Web/API/WebSockets_API)
-[![Status](https://img.shields.io/badge/Status-Operacional-00C9A7?style=for-the-badge)](.)
-[![Licença](https://img.shields.io/badge/Licença-Proprietária-DC143C?style=for-the-badge)](LICENSE)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Production-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://postgresql.org)
+[![SQLite](https://img.shields.io/badge/SQLite-Zero%20Config-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://sqlite.org)
+[![WebSocket](https://img.shields.io/badge/WebSocket-Live%20Alerts-E34F26?style=for-the-badge&logoColor=white)](https://developer.mozilla.org/docs/Web/API/WebSockets_API)
+[![Status](https://img.shields.io/badge/Status-Operational-00C9A7?style=for-the-badge&logo=checkmarx&logoColor=white)](.)
+[![License](https://img.shields.io/badge/License-Proprietary-DC143C?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
+[![Architecture](https://img.shields.io/badge/Architecture-Event--Driven-6A0DAD?style=for-the-badge&logo=apachekafka&logoColor=white)](.)
 
 <br/>
 
-**Plataforma operacional de detecção de fraudes bancárias** — ingestão de transações em tempo real,<br/>
-enriquecimento de features comportamentais, scoring de risco com explicabilidade total<br/>
-e alertas ao vivo via WebSocket.
+**A fully operational, production-grade banking fraud detection platform** — real-time transaction ingestion,<br/>
+behavioral feature enrichment, fully auditable risk scoring, and live WebSocket alerting.<br/>
+Every step is persisted, traceable, and built to extend.
 
 <br/>
 
-> Sem caixas-pretas. Sem dados simulados. Sem pipelines de brinquedo.<br/>
-> **Este é um sistema real — pronto para executar, estender e implantar.**
+> No black boxes. No synthetic data. No toy pipelines.<br/>
+> **This is a real system — built to run, extend, and deploy.**
 
 </div>
 
 ---
 
-## 📋 Índice
+## 📋 Table of Contents
 
-- [O que é o Fraud Master Bank?](#-o-que-é-o-fraud-master-bank)
-- [Visão Geral do Sistema](#-visão-geral-do-sistema)
-- [Início Rápido](#-início-rápido)
-- [Persistência e Banco de Dados](#-persistência-e-banco-de-dados)
-- [Referência da API](#-referência-da-api)
-- [Ingestão de Transações](#-ingestão-de-transações)
-- [Motor de Scoring de Risco](#-motor-de-scoring-de-risco)
-- [Estrutura do Projeto](#-estrutura-do-projeto)
-- [Reset e Limpeza de Dados](#-reset-e-limpeza-de-dados)
-- [Solução de Problemas](#-solução-de-problemas)
+- [What is Fraud Master Bank?](#-what-is-fraud-master-bank)
+- [System Architecture](#-system-architecture)
+- [Data Flow](#-data-flow)
+- [Quick Start](#-quick-start)
+- [Persistence & Database Backends](#-persistence--database-backends)
+- [API Reference](#-api-reference)
+- [Transaction Ingestion](#-transaction-ingestion)
+- [Risk Scoring Engine](#-risk-scoring-engine)
+- [Project Structure](#-project-structure)
+- [Data Reset & Cleanup](#-data-reset--cleanup)
+- [Troubleshooting](#-troubleshooting)
 - [Roadmap](#-roadmap)
-- [Contribuição](#-contribuição)
+- [Contributing](#-contributing)
 
 ---
 
-## ⚡ O que é o Fraud Master Bank?
+## ⚡ What is Fraud Master Bank?
 
-O **Fraud Master Bank** é uma plataforma antifraude completa, operacional e de nível produção — construída sobre **FastAPI** com suporte a banco de dados dual (SQLite / PostgreSQL), WebSocket em tempo real e um motor de scoring totalmente auditável.
+**Fraud Master Bank** is a complete, production-ready anti-fraud intelligence platform built on **FastAPI**, featuring dual database support (SQLite / PostgreSQL), real-time WebSocket streaming, and a fully transparent, rule-driven scoring engine.
 
-Cada transação ingerida passa por um pipeline completo:
+Every transaction ingested runs through a complete, uninterrupted pipeline:
 
 ```
-  INGESTÃO  ──▶  ENRIQUECIMENTO  ──▶  SCORING  ──▶  ALERTA  ──▶  DASHBOARD
+  INGEST  ──▶  ENRICH  ──▶  SCORE  ──▶  ALERT  ──▶  DASHBOARD
 ```
 
-Nenhuma etapa é simulada. Tudo é persistido, rastreável e extensível.
+Nothing is mocked. Everything is persisted, traceable, and extensible — from the first byte to the final flag.
 
 ---
 
-## 🧠 Visão Geral do Sistema
+## 🧠 System Architecture
 
 ```
-╔══════════════════════════════════════════════════════════════════════════╗
-║                         FRAUD MASTER BANK                                ║
-╠══════════════════════════════════════════════════════════════════════════╣
-║                                                                           ║
-║   ┌──────────────┐    ┌───────────────────┐    ┌──────────────────────┐ ║
-║   │  API REST    │───▶│    INGESTÃO       │───▶│  ENRIQUECIMENTO      │ ║
-║   │ POST /ingest │    │    Pipeline       │    │  · Velocidade (24h)  │ ║
-║   └──────────────┘    └───────────────────┘    │  · Volume total      │ ║
-║                                                 │  · Nº contrapartes   │ ║
-║   ┌──────────────┐                             │  · Desvio geográfico │ ║
-║   │  Web UI Form │────────────────────────────▶└──────────┬───────────┘ ║
-║   └──────────────┘                                        ▼             ║
-║                                               ┌──────────────────────┐  ║
-║                                               │   MOTOR DE RISCO     │  ║
-║                                               │   Scoring Engine     │  ║
-║                                               └──────────┬───────────┘  ║
-║                                ┌──────────────────────────┤             ║
-║                                ▼                          ▼             ║
-║              ┌──────────────────────┐      ┌──────────────────────┐    ║
-║              │  BANCO DE DADOS      │      │  STREAM WEBSOCKET    │    ║
-║              │  SQLite / Postgres   │      │  /ws/alerts          │    ║
-║              └──────────┬───────────┘      └──────────────────────┘    ║
-║                         ▼                                               ║
-║              ┌──────────────────────┐                                  ║
-║              │  DASHBOARD WEB       │                                  ║
-║              │  http://localhost    │                                  ║
-║              └──────────────────────┘                                  ║
-╚══════════════════════════════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                           FRAUD MASTER BANK                                  ║
+║                      Enterprise Anti-Fraud Platform                          ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║                                                                               ║
+║   ┌─────────────────┐    ┌──────────────────────┐    ┌────────────────────┐ ║
+║   │   REST API      │───▶│   INGESTION          │───▶│  ENRICHMENT        │ ║
+║   │ POST /ingest    │    │   Pipeline           │    │  · Velocity (24h)  │ ║
+║   └─────────────────┘    └──────────────────────┘    │  · Total volume    │ ║
+║                                                        │  · Counterparties  │ ║
+║   ┌─────────────────┐                                 │  · Geo deviation   │ ║
+║   │  Web UI Form    │────────────────────────────────▶└────────┬───────────┘ ║
+║   └─────────────────┘                                          ▼             ║
+║                                                  ┌─────────────────────────┐ ║
+║                                                  │    RISK SCORING ENGINE  │ ║
+║                                                  │   Explainable · Audited │ ║
+║                                                  └────────┬────────────────┘ ║
+║                              ┌─────────────────────────────┤                 ║
+║                              ▼                             ▼                 ║
+║            ┌──────────────────────────┐    ┌──────────────────────────────┐ ║
+║            │    DATABASE LAYER        │    │   WEBSOCKET STREAM           │ ║
+║            │  SQLite  ·  PostgreSQL   │    │   /ws/alerts  ·  Live Push   │ ║
+║            └──────────────────────────┘    └──────────────────────────────┘ ║
+║                            ▼                                                 ║
+║            ┌──────────────────────────┐                                     ║
+║            │     WEB DASHBOARD        │                                     ║
+║            │   http://localhost:8000  │                                     ║
+║            └──────────────────────────┘                                     ║
+╚══════════════════════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-## 🚀 Início Rápido
+## 🔄 Data Flow
 
-### 1 — Clone e crie o ambiente virtual
+```mermaid
+flowchart TD
+    A([📥 Transaction Input]) --> B{Ingestion Layer}
+    B --> C[Feature Enrichment]
+    C --> D1[💰 Amount Signal]
+    C --> D2[🌍 Geography Signal]
+    C --> D3[⚡ Velocity Signal]
+    C --> D4[👥 Counterparty Signal]
+    C --> D5[⚠️ Channel Signal]
+    D1 & D2 & D3 & D4 & D5 --> E[🧠 Risk Scoring Engine]
+    E --> F{Score Threshold}
+    F -- Score ≥ 0.7 --> G[🔴 HIGH RISK ALERT]
+    F -- Score 0.4–0.69 --> H[🟡 MEDIUM RISK]
+    F -- Score < 0.4 --> I[🟢 LOW RISK]
+    G --> J[(Database)]
+    H --> J
+    I --> J
+    G --> K[📡 WebSocket Push]
+    K --> L([🖥️ Live Dashboard])
+    J --> L
+```
+
+---
+
+## 🚀 Quick Start
+
+### 1 — Clone & create virtual environment
 
 ```bash
-git clone https://github.com/sua-org/fraud-master-bank.git
+git clone https://github.com/your-org/fraud-master-bank.git
 cd fraud-master-bank
 python -m venv .venv
 ```
 
-### 2 — Ative e instale as dependências
+### 2 — Activate, install & launch
 
 | 🪟 Windows · PowerShell | 🍎 macOS · 🐧 Linux |
-|---|---|
+|:---|:---|
 | `.venv\Scripts\Activate.ps1` | `source .venv/bin/activate` |
 | `pip install -r requirements.txt` | `pip install -r requirements.txt` |
 | `uvicorn src.Backend.app:app --reload` | `uvicorn src.Backend.app:app --reload` |
 
-### 3 — Abra no navegador
+### 3 — Open in your browser
 
-| Interface | Endereço |
+| Interface | Address |
 |:---|:---|
 | 🖥️ **Dashboard** | `http://127.0.0.1:8000` |
-| 📡 **API REST** | `http://127.0.0.1:8000/api/v1` |
-| 🔴 **WebSocket — Alertas** | `ws://127.0.0.1:8000/ws/alerts` |
+| 📡 **REST API** | `http://127.0.0.1:8000/api/v1` |
+| 🔴 **WebSocket — Live Alerts** | `ws://127.0.0.1:8000/ws/alerts` |
 | 📖 **Swagger Docs** | `http://127.0.0.1:8000/docs` |
 
 ---
 
-## 💾 Persistência e Banco de Dados
+## 💾 Persistence & Database Backends
 
-O sistema suporta dois backends. O **SQLite funciona imediatamente**, sem nenhuma configuração. O schema é criado automaticamente na inicialização.
+The platform ships with **SQLite enabled by default** — zero configuration, zero setup. The schema is auto-provisioned on first boot. Switch to PostgreSQL for production workloads in three steps.
 
 ```
-╔══════════════════════════════════════════════════════════════════════╗
-║                      BACKENDS DE BANCO DE DADOS                      ║
-╠═══════════════════════════════╦══════════════════════════════════════╣
-║  SQLite  ·  Padrão            ║  PostgreSQL  ·  Produção             ║
-╠═══════════════════════════════╬══════════════════════════════════════╣
-║  ✅  Zero configuração        ║  🔧  Requer configuração .env        ║
-║  ✅  Baseado em arquivo       ║  ✅  Pronto para produção            ║
-║  ✅  Ideal para demos         ║  ✅  Conexões concorrentes           ║
-║  ✅  Schema automático        ║  ✅  DBs remotos e em cloud          ║
-╚═══════════════════════════════╩══════════════════════════════════════╝
+╔════════════════════════════════════════════════════════════════════════════╗
+║                        DATABASE BACKENDS                                    ║
+╠══════════════════════════════════════╦═════════════════════════════════════╣
+║  SQLite  ·  Default                  ║  PostgreSQL  ·  Production           ║
+╠══════════════════════════════════════╬═════════════════════════════════════╣
+║  ✅  Zero configuration              ║  🔧  Requires .env setup             ║
+║  ✅  File-based · portable           ║  ✅  Production-ready                 ║
+║  ✅  Instant demos & local dev       ║  ✅  Concurrent connections           ║
+║  ✅  Auto schema provisioning        ║  ✅  Remote & cloud databases         ║
+╚══════════════════════════════════════╩═════════════════════════════════════╝
 ```
 
-### Migrando para PostgreSQL
+### Migrating to PostgreSQL
 
 ```bash
-# Passo 1 — copie o template
+# Step 1 — copy the environment template
 cp .env.example .env
 
-# Passo 2 — configure a conexão no .env
-DATABASE_URL=postgresql://usuario:senha@host:5432/nome_do_banco
+# Step 2 — configure your connection string in .env
+DATABASE_URL=postgresql://user:password@host:5432/database_name
 
-# Passo 3 — reinicie · o schema migra automaticamente
+# Step 3 — restart · schema migrates automatically
 uvicorn src.Backend.app:app --reload
 ```
 
 ---
 
-## 📡 Referência da API
+## 📡 API Reference
 
-| Método | Endpoint | Descrição |
+| Method | Endpoint | Description |
 |:---:|:---|:---|
-| `GET` | `/health` | Verificação de saúde da aplicação |
-| `POST` | `/api/v1/transactions/ingest` | Ingerir uma ou mais transações |
-| `GET` | `/api/v1/transactions` | Listar todas as transações |
-| `GET` | `/api/v1/alerts` | Listar todos os alertas de fraude |
-| `GET` | `/api/v1/entities` | Listar todas as entidades |
-| `GET` | `/api/v1/graph` | Grafo de relacionamentos entre entidades |
-| `GET` | `/api/v1/investigations` | Listar investigações abertas |
-| `POST` | `/api/v1/investigations` | Abrir nova investigação |
-| `PATCH` | `/api/v1/investigations/{id}` | Atualizar status de investigação |
-| `WS` | `/ws/alerts` | Stream de alertas em tempo real |
+| `GET` | `/health` | Application health check |
+| `POST` | `/api/v1/transactions/ingest` | Ingest one or more transactions |
+| `GET` | `/api/v1/transactions` | List all transactions |
+| `GET` | `/api/v1/alerts` | List all fraud alerts |
+| `GET` | `/api/v1/entities` | List all tracked entities |
+| `GET` | `/api/v1/graph` | Entity relationship graph |
+| `GET` | `/api/v1/investigations` | List open investigations |
+| `POST` | `/api/v1/investigations` | Open a new investigation |
+| `PATCH` | `/api/v1/investigations/{id}` | Update investigation status |
+| `WS` | `/ws/alerts` | Real-time alert stream |
 
 ---
 
-## 🔌 Ingestão de Transações
+## 🔌 Transaction Ingestion
 
-Envie um array JSON ao endpoint de ingestão. O pipeline irá **enriquecer features**, **calcular o score de risco**, **persistir no banco** e **disparar alertas via WebSocket** — tudo em uma única requisição.
+Submit a JSON array to the ingestion endpoint. The pipeline will **enrich behavioral features**, **compute a risk score**, **persist to the database**, and **push WebSocket alerts** — all within a single request.
 
-**Schema da transação:**
+**Transaction schema:**
 
 ```jsonc
 {
-  "entity_id":       "conta_001",  // ID da conta remetente
-  "counterparty_id": "conta_002",  // ID da conta destinatária
-  "amount":          15000,        // Valor da transação (numérico)
-  "currency":        "BRL",        // Código de moeda ISO 4217
-  "channel":         "atm",        // atm | wire | crypto | online | agencia
-  "country":         "BR"          // Código de país ISO 3166-1 alpha-2
+  "entity_id":       "account_001",  // Source account ID
+  "counterparty_id": "account_002",  // Destination account ID
+  "amount":          15000,          // Transaction amount (numeric)
+  "currency":        "USD",          // ISO 4217 currency code
+  "channel":         "atm",          // atm | wire | crypto | online | branch
+  "country":         "US"            // ISO 3166-1 alpha-2 country code
 }
 ```
 
@@ -197,7 +224,7 @@ Envie um array JSON ao endpoint de ingestão. O pipeline irá **enriquecer featu
 ```powershell
 curl -X POST http://127.0.0.1:8000/api/v1/transactions/ingest `
   -H "Content-Type: application/json" `
-  -d "[{`"entity_id`":`"conta_1`",`"counterparty_id`":`"conta_2`",`"amount`":15000,`"currency`":`"BRL`",`"channel`":`"atm`",`"country`":`"BR`"}]"
+  -d "[{`"entity_id`":`"acc_1`",`"counterparty_id`":`"acc_2`",`"amount`":15000,`"currency`":`"USD`",`"channel`":`"atm`",`"country`":`"US`"}]"
 ```
 
 **🍎 macOS / 🐧 Linux:**
@@ -205,68 +232,68 @@ curl -X POST http://127.0.0.1:8000/api/v1/transactions/ingest `
 ```bash
 curl -X POST http://127.0.0.1:8000/api/v1/transactions/ingest \
   -H "Content-Type: application/json" \
-  -d '[{"entity_id":"conta_1","counterparty_id":"conta_2","amount":15000,"currency":"BRL","channel":"atm","country":"BR"}]'
+  -d '[{"entity_id":"acc_1","counterparty_id":"acc_2","amount":15000,"currency":"USD","channel":"atm","country":"US"}]'
 ```
 
 ---
 
-## 🔴 Motor de Scoring de Risco
+## 🔴 Risk Scoring Engine
 
-O motor de scoring (`src/intelligence/risk_engine/scoring_model.py`) é um **modelo baseado em regras transparentes**, projetado para máxima auditabilidade. Cada score pode ser rastreado até seus sinais individuais.
-
-```
-╔══════════════════════════════════════════════════════════════════════════╗
-║                          SINAIS DE RISCO                                 ║
-╠══════════════════════════╦═══════════════════════════════════════════════╣
-║  💰  Valor               ║  Transações acima do limiar de alto valor    ║
-║  🌍  Geografia           ║  Transferências internacionais               ║
-║  ⚡  Velocidade          ║  Número de transações nas últimas 24h        ║
-║  📦  Volume              ║  Valor total movimentado nas últimas 24h     ║
-║  👥  Contrapartes        ║  Quantidade de destinos distintos em 24h     ║
-║  🗺️  Desvio Geográfico   ║  Mudança de país vs. histórico recente       ║
-║  ⚠️  Canal de Risco      ║  Canais críticos: ATM · Crypto               ║
-╚══════════════════════════╩═══════════════════════════════════════════════╝
-```
+The scoring engine (`src/intelligence/risk_engine/scoring_model.py`) is a **transparent, rule-based model** designed for maximum auditability. Every score can be traced back to its individual contributing signals — no guesswork, no opacity.
 
 ```
-Score   0.0 ══════════════════════════════════════════════════ 1.0
-             ║  BAIXO RISCO  ║    RISCO MÉDIO    ║ ALTO RISCO ║
-             ╚═══════════════╩══════════════════╩═════════════╝
-                                                        ▲
-                                                ┌───────┴───────┐
-                                                │ ALERTA CRIADO │
-                                                │ → Push WS     │
-                                                │ → DB salvo    │
-                                                │ → UI flagada  │
-                                                └───────────────┘
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                           RISK SIGNAL MATRIX                                 ║
+╠══════════════════════════════╦═══════════════════════════════════════════════╣
+║  💰  Amount                  ║  Transactions exceeding high-value threshold  ║
+║  🌍  Geography               ║  Cross-border and international transfers     ║
+║  ⚡  Velocity                ║  Transaction count in the last 24 hours       ║
+║  📦  Volume                  ║  Total value moved in the last 24 hours       ║
+║  👥  Counterparties          ║  Distinct destination accounts in 24h         ║
+║  🗺️  Geographic Drift        ║  Country shift vs. recent behavioral history  ║
+║  ⚠️  High-Risk Channel       ║  Critical channels: ATM · Crypto              ║
+╚══════════════════════════════╩═══════════════════════════════════════════════╝
 ```
 
-> Estenda o motor em `src/intelligence/risk_engine/scoring_model.py` — adicione modelos ML, features de grafos ou listas de vigilância externas sem modificar o restante do pipeline.
+```
+Risk Score   0.0 ════════════════════════════════════════════════════ 1.0
+                  ║    LOW RISK     ║   MEDIUM RISK   ║  HIGH RISK  ║
+                  ╚═════════════════╩═════════════════╩═════════════╝
+                                                              ▲
+                                                    ┌─────────┴────────┐
+                                                    │  ALERT TRIGGERED │
+                                                    │  → WebSocket push│
+                                                    │  → DB persisted  │
+                                                    │  → UI flagged    │
+                                                    └──────────────────┘
+```
+
+> Extend the engine at `src/intelligence/risk_engine/scoring_model.py` — plug in ML models, graph centrality features, or external watchlists without touching any other part of the pipeline.
 
 ---
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 fraud-master-bank/
 │
 ├── 📁 src/
 │   ├── 📁 Backend/
-│   │   ├── 🐍 app.py              ◀  Aplicação FastAPI · rotas e middleware
-│   │   ├── 🐍 schemas.py          ◀  Modelos Pydantic · request / response
-│   │   ├── 📁 services/           ◀  Camada de lógica de negócio
-│   │   └── 📁 static/             ◀  Dashboard Web (HTML · CSS · JS)
+│   │   ├── 🐍 app.py                ◀  FastAPI application · routes & middleware
+│   │   ├── 🐍 schemas.py            ◀  Pydantic models · request / response
+│   │   ├── 📁 services/             ◀  Business logic layer
+│   │   └── 📁 static/              ◀  Web dashboard (HTML · CSS · JS)
 │   │
-│   ├── 📁 pipelines/              ◀  Pipelines de ingestão e processamento
+│   ├── 📁 pipelines/               ◀  Ingestion & processing pipelines
 │   │
 │   ├── 📁 intelligence/
 │   │   └── 📁 risk_engine/
-│   │       └── 🐍 scoring_model.py  ◀  ⭐ Lógica central de scoring
+│   │       └── 🐍 scoring_model.py  ◀  ⭐ Core scoring logic
 │   │
-│   └── 📁 db/                     ◀  Modelos ORM · sessões · migrações
+│   └── 📁 db/                      ◀  ORM models · sessions · migrations
 │
 ├── 📁 data/
-│   └── 🗄️ fraud_master_bank.db    ◀  Banco SQLite (criado automaticamente)
+│   └── 🗄️ fraud_master_bank.db     ◀  SQLite database (auto-created)
 │
 ├── 📄 .env.example
 ├── 📄 requirements.txt
@@ -275,45 +302,45 @@ fraud-master-bank/
 
 ---
 
-## 🧹 Reset e Limpeza de Dados
+## 🧹 Data Reset & Cleanup
 
 | 🪟 PowerShell | 🍎 macOS · 🐧 Linux |
-|---|---|
+|:---|:---|
 | `Remove-Item -Force .\data\fraud_master_bank.db -ErrorAction SilentlyContinue` | `rm -f ./data/fraud_master_bank.db` |
 
-Reinicie o servidor — o schema será recriado automaticamente.
+Restart the server — the schema will be recreated automatically.
 
 ---
 
-## 🛠️ Solução de Problemas
+## 🛠️ Troubleshooting
 
 <details>
-<summary><strong>🔇 &nbsp; Interface carrega mas não exibe dados</strong></summary>
+<summary><strong>🔇 &nbsp; Dashboard loads but shows no data</strong></summary>
 <br/>
-O dashboard requer pelo menos uma transação. Ingira via formulário da interface ou chamando <code>/api/v1/transactions/ingest</code> diretamente pelo <code>curl</code> ou pelo Swagger UI em <code>/docs</code>.
+The dashboard requires at least one ingested transaction to display metrics. Submit one via the UI form or call <code>/api/v1/transactions/ingest</code> directly using <code>curl</code> or the Swagger UI at <code>/docs</code>.
 </details>
 
 <details>
-<summary><strong>🔌 &nbsp; WebSocket aparece como "Desconectado"</strong></summary>
+<summary><strong>🔌 &nbsp; WebSocket shows "Disconnected"</strong></summary>
 <br/>
-Certifique-se de que o servidor está em execução e que você está acessando exatamente <code>http://127.0.0.1:8000</code>. Conexões WebSocket falharão com qualquer divergência de host ou porta.
+Make sure the server is running and you are accessing it at exactly <code>http://127.0.0.1:8000</code>. WebSocket connections will fail on any host or port mismatch.
 </details>
 
 <details>
-<summary><strong>🐘 &nbsp; Erros de conexão com PostgreSQL</strong></summary>
+<summary><strong>🐘 &nbsp; PostgreSQL connection errors</strong></summary>
 <br/>
 
-1. Confirme que o banco está acessível.
-2. Verifique o `DATABASE_URL` no `.env`:
+1. Confirm the database server is reachable.
+2. Verify `DATABASE_URL` in your `.env`:
 ```dotenv
-DATABASE_URL=postgresql://usuario:senha@host:5432/nome_do_banco
+DATABASE_URL=postgresql://user:password@host:5432/database_name
 ```
-3. Garanta que o banco de destino existe antes de iniciar.
-4. Verifique regras de firewall e `pg_hba.conf` em conexões remotas.
+3. Ensure the target database exists before starting the application.
+4. Check firewall rules and `pg_hba.conf` for remote connections.
 </details>
 
 <details>
-<summary><strong>📦 &nbsp; Falha na instalação de dependências</strong></summary>
+<summary><strong>📦 &nbsp; Dependency installation failure</strong></summary>
 <br/>
 
 ```bash
@@ -326,33 +353,34 @@ pip install -r requirements.txt
 
 ## 🗺️ Roadmap
 
-| Status | Funcionalidade |
+| Status | Feature |
 |:---:|:---|
-| ✅ | Pipeline de ingestão de transações |
-| ✅ | Motor de scoring baseado em regras |
-| ✅ | Alertas em tempo real via WebSocket |
-| ✅ | Persistência SQLite + PostgreSQL |
-| ✅ | API de gestão de investigações |
-| ✅ | API de grafo de entidades |
-| 🔄 | Modelo ML de scoring (XGBoost · Isolation Forest) |
-| 🔄 | Rede neural de grafos para anéis de contrapartes |
-| 📋 | Integração com listas de vigilância externas (OFAC · PEP) |
-| 📋 | Dashboard de gestão de casos |
-| 📋 | Exportação de RAS (Relatório de Atividade Suspeita) |
-| 📋 | Suporte multi-tenant |
-| 📋 | Ingestão via streaming Kafka / Kinesis |
+| ✅ | Transaction ingestion pipeline |
+| ✅ | Rule-based explainable scoring engine |
+| ✅ | Real-time WebSocket alerting |
+| ✅ | SQLite + PostgreSQL dual persistence |
+| ✅ | Investigation management API |
+| ✅ | Entity relationship graph API |
+| 🔄 | ML scoring model (XGBoost · Isolation Forest) |
+| 🔄 | Graph neural network for counterparty ring detection |
+| 📋 | External watchlist integration (OFAC · PEP · FATF) |
+| 📋 | Case management dashboard |
+| 📋 | SAR (Suspicious Activity Report) export |
+| 📋 | Multi-tenant support |
+| 📋 | Kafka / Kinesis streaming ingestion |
+| 📋 | GDPR-compliant data anonymization layer |
 
 ---
 
-## 🤝 Contribuição
+## 🤝 Contributing
 
-Contribuições são bem-vindas nas seguintes áreas:
+Contributions are welcome across these areas:
 
-- **Novos sinais de scoring** — velocidade, centralidade de grafos, baselines comportamentais
-- **Integração de modelos ML** — classificadores treinados no pipeline de scoring
-- **Conectores de dados** — CSV em lote, Kafka, webhooks
-- **Infraestrutura** — Docker Compose, Kubernetes, CI/CD
-- **Testes** — unitários para scoring, integração para a API
+- **New scoring signals** — velocity refinements, graph centrality, behavioral baselines
+- **ML model integration** — trained classifiers wired into the scoring pipeline
+- **Data connectors** — batch CSV ingestion, Kafka consumers, inbound webhooks
+- **Infrastructure** — Docker Compose, Kubernetes manifests, CI/CD pipelines
+- **Testing** — unit tests for scoring logic, integration tests for the full API surface
 
 ---
 
@@ -360,7 +388,7 @@ Contribuições são bem-vindas nas seguintes áreas:
 
 <br/>
 
-*Construído para detectar. Projetado para explicar. Arquitetado para escalar.*
+*Built to detect. Designed to explain. Architected to scale.*
 
 <br/>
 
@@ -368,9 +396,12 @@ Contribuições são bem-vindas nas seguintes áreas:
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://postgresql.org)
 [![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)](https://sqlite.org)
+[![WebSocket](https://img.shields.io/badge/WebSocket-E34F26?style=flat-square&logoColor=white)](https://developer.mozilla.org/docs/Web/API/WebSockets_API)
+[![XGBoost](https://img.shields.io/badge/XGBoost-Coming%20Soon-FF6600?style=flat-square&logo=xgboost&logoColor=white)](.)
+[![OFAC](https://img.shields.io/badge/OFAC%20Watchlist-Roadmap-6A0DAD?style=flat-square&logoColor=white)](.)
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a0000,60:DC143C,100:8B0000&height=120&section=footer&text=Fraud%20Master%20Bank%20%C2%B7%20Intelig%C3%AAncia%20Antifraude&fontSize=14&fontColor=ffcccc&fontAlignY=65&animation=fadeIn" width="100%" alt="footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0000,40:8B0000,80:DC143C,100:ff4444&height=130&section=footer&text=Fraud%20Master%20Bank%20%C2%B7%20Real-Time%20Financial%20Intelligence&fontSize=14&fontColor=ffcccc&fontAlignY=66&animation=fadeIn" width="100%" alt="footer"/>
 
 </div>
